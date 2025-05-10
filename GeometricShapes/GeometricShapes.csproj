@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8329B151-D55B-4A74-B2E1-28C0C1BBFB2E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GeometricShapes</RootNamespace>
+    <AssemblyName>GeometricShapes</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseShape.cs" />
+    <Compile Include="CtrlShapes\Circle.cs" />
+    <Compile Include="CtrlShapes\Decagon.cs" />
+    <Compile Include="CtrlShapes\Deltoid.cs" />
+    <Compile Include="CtrlShapes\Ellipse.cs" />
+    <Compile Include="CtrlShapes\Enneagon.cs" />
+    <Compile Include="CtrlShapes\Hexagon.cs" />
+    <Compile Include="CtrlShapes\Heptagon.cs" />
+    <Compile Include="CtrlShapes\IsoscelesTrapezium.cs" />
+    <Compile Include="CtrlShapes\Octagon.cs" />
+    <Compile Include="CtrlShapes\Oval.cs" />
+    <Compile Include="CtrlShapes\Pentagon.cs" />
+    <Compile Include="CtrlShapes\Trapezoid.cs" />
+    <Compile Include="ModelShapes\UserCtrlOval.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlOval.Designer.cs">
+      <DependentUpon>UserCtrlOval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlTrapezoid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlTrapezoid.Designer.cs">
+      <DependentUpon>UserCtrlTrapezoid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlTriangle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlTriangle.Designer.cs">
+      <DependentUpon>UserCtrlTriangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlRectangle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlRectangle.Designer.cs">
+      <DependentUpon>UserCtrlRectangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlRhombus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlRhombus.Designer.cs">
+      <DependentUpon>UserCtrlRhombus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlPentagon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlPentagon.Designer.cs">
+      <DependentUpon>UserCtrlPentagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlTrapezium.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlTrapezium.Designer.cs">
+      <DependentUpon>UserCtrlTrapezium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlOctagon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlOctagon.Designer.cs">
+      <DependentUpon>UserCtrlOctagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlHexagon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlHexagon.Designer.cs">
+      <DependentUpon>UserCtrlHexagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlEllipse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlEllipse.Designer.cs">
+      <DependentUpon>UserCtrlEllipse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlEnneagon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlEnneagon.Designer.cs">
+      <DependentUpon>UserCtrlEnneagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlIsoscelesTrapezium.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlIsoscelesTrapezium.Designer.cs">
+      <DependentUpon>UserCtrlIsoscelesTrapezium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlRhomboid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlRhomboid.Designer.cs">
+      <DependentUpon>UserCtrlRhomboid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlHeptagon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlHeptagon.Designer.cs">
+      <DependentUpon>UserCtrlHeptagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlDeltoid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlDeltoid.Designer.cs">
+      <DependentUpon>UserCtrlDeltoid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlDecagon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlDecagon.Designer.cs">
+      <DependentUpon>UserCtrlDecagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlCircle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlCircle.Designer.cs">
+      <DependentUpon>UserCtrlCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CtrlShapes\Rectangle.cs" />
+    <Compile Include="CtrlShapes\Rhomboid.cs" />
+    <Compile Include="CtrlShapes\Rhombus.cs" />
+    <Compile Include="FrmShapes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShapes.Designer.cs">
+      <DependentUpon>FrmShapes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlShapes\Square.cs" />
+    <Compile Include="CtrlShapes\Trapezium.cs" />
+    <Compile Include="CtrlShapes\Triangle.cs" />
+    <Compile Include="ModelShapes\UserCtrlSquare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelShapes\UserCtrlSquare.Designer.cs">
+      <DependentUpon>UserCtrlSquare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\FuncValidation.cs" />
+    <EmbeddedResource Include="ModelShapes\UserCtrlCircle.resx">
+      <DependentUpon>UserCtrlCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlDecagon.resx">
+      <DependentUpon>UserCtrlDecagon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlDeltoid.resx">
+      <DependentUpon>UserCtrlDeltoid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlEllipse.resx">
+      <DependentUpon>UserCtrlEllipse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlEnneagon.resx">
+      <DependentUpon>UserCtrlEnneagon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlHeptagon.resx">
+      <DependentUpon>UserCtrlHeptagon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlHexagon.resx">
+      <DependentUpon>UserCtrlHexagon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlIsoscelesTrapezium.resx">
+      <DependentUpon>UserCtrlIsoscelesTrapezium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlOctagon.resx">
+      <DependentUpon>UserCtrlOctagon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlOval.resx">
+      <DependentUpon>UserCtrlOval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlPentagon.resx">
+      <DependentUpon>UserCtrlPentagon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlRectangle.resx">
+      <DependentUpon>UserCtrlRectangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlRhomboid.resx">
+      <DependentUpon>UserCtrlRhomboid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlRhombus.resx">
+      <DependentUpon>UserCtrlRhombus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlTrapezium.resx">
+      <DependentUpon>UserCtrlTrapezium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlTrapezoid.resx">
+      <DependentUpon>UserCtrlTrapezoid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlTriangle.resx">
+      <DependentUpon>UserCtrlTriangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmShapes.resx">
+      <DependentUpon>FrmShapes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelShapes\UserCtrlSquare.resx">
+      <DependentUpon>UserCtrlSquare.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
